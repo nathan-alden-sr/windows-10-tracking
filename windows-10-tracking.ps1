@@ -100,15 +100,11 @@ function Set-Services {
 
             Stop-Service DiagTrack -Force
 
-            Write-Verbose "Removing DiagTrack service"
-            
             Remove-Service DiagTrack
 
             Write-Verbose "Stopping dmwappushservice service"
 
             Stop-Service dmwappushservice -Force
-
-            Write-Verbose "Removing dmwappushservice service"
             
             Remove-Service dmwappushservice
         }
@@ -124,7 +120,8 @@ function Remove-Service {
 
     $Service = Get-WmiObject -Class Win32_Service -Filter "Name='$Name'"
     if ($Service) {
-    $Service
+        Write-Verbose "Removing $Name service"
+
         $Service.Delete()
     }
 }
