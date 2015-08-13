@@ -1,6 +1,6 @@
 # Summary
 
-This PowerShell script enables or disables various tracking components in Windows 10. It can be used in a fully-automated environment to enable or disable Windows 10 tracking.
+This PowerShell script enables or disables various tracking components in Windows 10. It can be used in a fully-automated environment to enable or disable Windows 10 tracking. The script is **not intended** to remove all tracking in Windows 10; it only configures certain tracking components.
 
 This script was originally based on https://github.com/10se1ucgo/DisableWinTracking.
 
@@ -9,6 +9,8 @@ This script was originally based on https://github.com/10se1ucgo/DisableWinTrack
 **Use this script at your own risk!**
 
 When choosing to delete Windows services, note that the services are **permanently deleted**.
+
+I have not personally tested every `HOSTS` entry. Some of them may cause applications and services to stop working. Feel free to modify the array containing the entries if you run into any problems.
 
 # What the script does
 
