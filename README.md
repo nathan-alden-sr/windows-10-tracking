@@ -1,6 +1,6 @@
 # Summary
 
-This PowerShell script enables or disables various tracking components in Windows 10. It can be used in a fully-automated environment to enable or disable Windows 10 tracking. The script is **not intended** to remove all tracking in Windows 10; it only configures certain tracking components.
+This PowerShell script enables or disables various tracking components in Windows 10. It can be used in a fully-automated environment to enable or disable Windows 10 tracking. This script is **not intended** to remove all tracking in Windows 10; it only manipulates certain tracking components.
 
 This script was originally based on https://github.com/10se1ucgo/DisableWinTracking.
 
@@ -10,7 +10,7 @@ This script was originally based on https://github.com/10se1ucgo/DisableWinTrack
 
 When choosing to delete Windows services, note that the services are **permanently deleted**.
 
-I have not personally tested every `HOSTS` entry. Some of them may cause applications and services to stop working. Feel free to modify the array containing the entries if you run into any problems.
+I have not personally tested every `HOSTS` entry. Some of them may cause applications and services to stop working. Feel free to modify the file containing the entries.
 
 # What the script does
 
@@ -24,11 +24,13 @@ I have not personally tested every `HOSTS` entry. Some of them may cause applica
 
 The script consists of several cmdlets, each of which performs a distinct duty with regards to Windows 10 tracking. The script itself is also a cmdlet. The script supports the `-Verbose` flag.
 
-* Enable tracking: `.\windows-10-tracking.ps1 Enable`
-* Disable tracking: `.\windows-10-tracking.ps1 Disable`
-* Disable tracking and deletes offending Windows services: `.\windows-10-tracking.ps1 DeleteAndDisable`
+* Enable tracking: `.\windows-10-tracking.ps1 EnableTracking`
+* Disable tracking: `.\windows-10-tracking.ps1 DisableTracking`
+* Disable tracking and deletes offending Windows services: `.\windows-10-tracking.ps1 DisableTrackingAndDeleteServices`
 
-Feel free to modify the script if you'd like to control what and how the individual cmdlets are called.
+The list of blocked hosts is managed in a file separate from the scripts.
+
+Feel free to modify the script if you'd like to control how the individual cmdlets are called.
 
 # Disclaimer
 
