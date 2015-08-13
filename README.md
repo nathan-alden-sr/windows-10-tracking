@@ -1,8 +1,8 @@
 # Summary
 
-This PowerShell script enables or disables various tracking components in Windows 10. It can be used in a fully-automated environment to enable or disable Windows 10 tracking. This script is **not intended** to remove all tracking in Windows 10; it only manipulates certain tracking components.
+These PowerShell scripts enable or disable various tracking components in Windows 10. They can be used from the PowerShell command line or in an automated environment; they do not require user input. These scripts are **not intended** to remove all tracking in Windows 10; they only manipulate certain tracking components.
 
-This script was originally based on https://github.com/10se1ucgo/DisableWinTracking.
+This project was inspired by https://github.com/10se1ucgo/DisableWinTracking.
 
 # Warnings
 
@@ -10,9 +10,9 @@ This script was originally based on https://github.com/10se1ucgo/DisableWinTrack
 
 When choosing to delete Windows services, note that the services are **permanently deleted**.
 
-I have not personally tested every `HOSTS` entry. Some of them may cause applications and services to stop working. Feel free to modify the file containing the entries.
+We have not personally tested every `HOSTS` entry. Some of them may cause applications and services to stop working. Feel free to modify the file containing the entries.
 
-# What the script does
+# What the scripts do
 
 * Sets the `HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection\AllowTelemetry` value
 * Manipulates the `DiagTrack` and `dmwappushservice` Windows services
@@ -20,17 +20,15 @@ I have not personally tested every `HOSTS` entry. Some of them may cause applica
 * Manages `HOSTS` file entries for numerous Microsoft tracking servers
 * Manages OneDrive
 
-# How to use the script
+# How to use the scripts
 
-The script consists of several cmdlets, each of which performs a distinct duty with regards to Windows 10 tracking. The script itself is also a cmdlet. The script supports the `-Verbose` flag.
+The `windows-10-tracking.ps1` script dot-sources and calls individual cmdlet scripts, each of which perform a distinct duty with regards to Windows 10 tracking. All scripts support the `-Verbose` flag.
 
 * Enable tracking: `.\windows-10-tracking.ps1 EnableTracking`
 * Disable tracking: `.\windows-10-tracking.ps1 DisableTracking`
 * Disable tracking and deletes offending Windows services: `.\windows-10-tracking.ps1 DisableTrackingAndDeleteServices`
 
 The list of blocked hosts is managed in a file separate from the scripts.
-
-Feel free to modify the script if you'd like to control how the individual cmdlets are called.
 
 # Disclaimer
 
