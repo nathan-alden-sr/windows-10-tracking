@@ -12,6 +12,11 @@ a.ads1.msn.com
 a.ads2.msads.net
 a.ads2.msn.com
 a.rad.msn.com
+a1621.g.akamai.net
+a1856.g2.akamai.net
+a1961.g.akamai.net
+a248.e.akamai.net
+a978.i6g1.akamai.net
 ac3.msn.com
 ad.doubleclick.net
 adnexus.net
@@ -21,12 +26,14 @@ ads1.msads.net
 ads1.msn.com
 aidps.atdmt.com
 aka-cdn-ns.adtech.de
+any.edge.bing.com
 apps.skype.com
 az361816.vo.msecnd.net
 az512334.vo.msecnd.net
 b.ads1.msn.com
 b.ads2.msads.net
 b.rad.msn.com
+bingads.microsoft.com
 bs.serving-sys.com
 c.atdmt.com
 c.msn.com
@@ -41,6 +48,10 @@ cs1.wpc.v0cdn.net
 db3aqu.atdmt.com
 df.telemetry.microsoft.com
 diagnostics.support.microsoft.com
+e2835.dspb.akamaiedge.net
+e7341.g.akamaiedge.net
+e7502.ce.akamaiedge.net
+e8218.ce.akamaiedge.net
 ec.atdmt.com
 fe2.update.microsoft.com.akadns.net
 feedback.microsoft-hohm.com
@@ -49,8 +60,12 @@ feedback.windows.com
 flex.msn.com
 g.msn.com
 h1.msn.com
+h2.msn.com
+hostedocsp.globalsign.com
 i1.services.social.microsoft.com
 i1.services.social.microsoft.com.nsatc.net
+ipv6.msftncsi.com
+ipv6.msftncsi.com.edgesuite.net
 lb1.www.ms.akadns.net
 live.rads.msn.com
 m.adnxs.com
@@ -61,6 +76,7 @@ msnbot-65-55-108-23.search.msn.com
 msntest.serving-sys.com
 oca.telemetry.microsoft.com
 oca.telemetry.microsoft.com.nsatc.net
+onesettings-db5.metron.live.nsatc.net
 pre.footprintpredict.com
 preview.msn.com
 pricelist.skype.com
@@ -103,4 +119,7 @@ watson.ppe.telemetry.microsoft.com
 watson.telemetry.microsoft.com
 watson.telemetry.microsoft.com.nsatc.net
 wes.df.telemetry.microsoft.com
+win10.ipv6.microsoft.com
+www.bingads.microsoft.com
+www.go.microsoft.akadns.net
 www.msftncsi.com
