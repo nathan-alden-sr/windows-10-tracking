@@ -53,7 +53,6 @@ e7341.g.akamaiedge.net
 e7502.ce.akamaiedge.net
 e8218.ce.akamaiedge.net
 ec.atdmt.com
-fe2.update.microsoft.com.akadns.net
 feedback.microsoft-hohm.com
 feedback.search.microsoft.com
 feedback.windows.com
@@ -85,7 +84,6 @@ rad.msn.com
 redir.metaservices.microsoft.com
 reports.wes.df.telemetry.microsoft.com
 s.gateway.messenger.live.com
-schemas.microsoft.akadns.net
 secure.adnxs.com
 secure.flashtalking.com
 services.wes.df.telemetry.microsoft.com
@@ -98,7 +96,6 @@ sqm.telemetry.microsoft.com
 sqm.telemetry.microsoft.com.nsatc.net
 static.2mdn.net
 statsfe1.ws.microsoft.com
-statsfe2.update.microsoft.com.akadns.net
 statsfe2.ws.microsoft.com
 survey.watson.microsoft.com
 telecommand.telemetry.microsoft.com
@@ -122,4 +119,3 @@ wes.df.telemetry.microsoft.com
 win10.ipv6.microsoft.com
 www.bingads.microsoft.com
 www.go.microsoft.akadns.net
-www.msftncsi.com
