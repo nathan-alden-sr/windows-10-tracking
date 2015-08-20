@@ -8,17 +8,19 @@ param(
 
 Set-StrictMode -Version Latest
 
-. .\Clear-DiagTrackLog.ps1
-. .\Set-OneDrive.ps1
-. .\Set-Services.ps1
-. .\Set-Telemetry.ps1
-. .\Set-TrackingServerHostsEntries.ps1
+. $PSScriptRoot\Clear-DiagTrackLog.ps1
+. $PSScriptRoot\Set-OneDrive.ps1
+. $PSScriptRoot\Set-Services.ps1
+. $PSScriptRoot\Set-Telemetry.ps1
+. $PSScriptRoot\Set-TrackingServerHostsEntries.ps1
+. $PSScriptRoot\Set-TrackingServerIpAddressEntries.ps1
 
 switch ($Action) {
     "EnableTracking" {
         Set-Telemetry Enable
         Set-Services Enable
         Set-TrackingServerHostsEntries Remove
+        Set-TrackingServerIpAddressEntries Remove
         Set-OneDrive Enable
     }
     "DisableTracking" {
@@ -26,6 +28,7 @@ switch ($Action) {
         Set-Services Disable
         Clear-DiagTrackLog
         Set-TrackingServerHostsEntries Add
+        Set-TrackingServerIpAddressEntries Add
         Set-OneDrive Disable
     }
     "DisableTrackingAndDeleteServices" {
@@ -33,6 +36,7 @@ switch ($Action) {
         Set-Services Delete
         Clear-DiagTrackLog
         Set-TrackingServerHostsEntries Add
+        Set-TrackingServerIpAddressEntries Add
         Set-OneDrive Disable
     }
 }
